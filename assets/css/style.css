@@ -1,0 +1,94 @@
+
+.sidebar {
+    height: 100vh;
+    width: 300px;
+    background-color: #ede8e8;
+    position: fixed;
+    top: 0;
+    left: -400px;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .sidebar.active {
+    left: 0;
+  }
+  
+  .backDrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100vh;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .backDrop.active {
+    display: block;
+  }
+  
+  .logo {
+    padding: 20px;
+    display: block;
+  }
+  
+  .sidebarMenu {
+    margin-bottom: 5px;
+  }
+  .sidebarMenu li {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebarMenu li a:link,
+  .sidebarMenu li a:visited {
+    color: #000;
+    padding: 10px;
+    display: block;
+    text-transform: capitalize;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  #hideNavbar {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  i#hideNavbar:hover {
+    transform: rotate(45deg);
+  }
+  
+  .section {
+    height: 100vh;
+    border: 2px solid orange;
+    font-size: 42px;
+    color: #f9f7f7;
+    padding: 30px;
+    text-align: center;
+
+   
+  }
+
+  .fit{
+    object-fit: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
+  
+  .section:nth-of-type(1) {
+    background-color: rgb(192, 195, 195);
+  }
+  
+  
+  .navigationtoggle {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+  
